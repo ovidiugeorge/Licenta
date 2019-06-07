@@ -3,14 +3,11 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def main_app():
-    return render_template("index.html")
 
-@app.route('/region')
+@app.route('/regions')
 def region():
     return render_template("region.html")
 
-@app.route('/a')
+@app.route('/')
 def test():
     return render_template("app.html")
