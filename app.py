@@ -10,3 +10,7 @@ def main_app():
 @app.route('/region')
 def region():
     return render_template("region.html")
+
+@app.route('/a')
+def test():
+    return render_template("app.html")
