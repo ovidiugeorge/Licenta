@@ -11,3 +11,7 @@ def region():
 @app.route('/')
 def test():
     return render_template("app.html")
+
+@app.route('/login')
+def login():
+    return render_template("loginPage.html")
